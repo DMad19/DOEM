@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "build:css": "tailwindcss -i src/input.css -o src/output.css",
-    "create-dist": "mkdir -p dist",
     "copy-html": "cp src/index.html dist/index.html",
     "copy-css": "cp src/output.css dist/output.css",
-    "build": "npm run build:css && npm run create-dist && npm run copy-html && npm run copy-css",
+    "copy-js": "cp src/index.js dist/index.js",
+    "build": "npm run build:css && npm run copy-html && npm run copy-css && npm run copy-js",
     "deploy": "gh-pages -d dist",
     "start": "node index.js",
     "dev": "nodemon index.js",
