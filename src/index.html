@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOEM</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="flex flex-col min-h-screen justify-between min-w-max">
+    <header class="flex justify-center items-center p-4 bg-gray-100 w-full">
+        <h1 class="text-xl font-bold">Gonna&nbsp;<span class="text-red-500">DO'EM</span>&nbsp;Now</h1>
+    </header>
+    <main class="flex flex-grow justify-center items-center">
+        <div class="flex flex-col items-center space-y-4">
+            <input type="text" name="task" id="taskInput" class="w-full p-2 border rounded">
+            <button class="w-full p-2 bg-blue-500 text-white rounded" id="addTaskBtn">Add Task</button>
+            <ul class="w-full flex flex-col" id="taskList"></ul>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
