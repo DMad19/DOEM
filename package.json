@@ -4,7 +4,7 @@
   "description": "todo application with local storage",
   "main": "index.js",
   "type": "module",
-"scripts": {
+  "scripts": {
     "build:css": "tailwindcss -i src/input.css -o src/output.css",
     "create-dist": "mkdir -p dist",
     "copy-html": "cp src/index.html dist/index.html",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "nodemon": "^3.1.9",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
